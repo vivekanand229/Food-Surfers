@@ -1,0 +1,25 @@
+DB Constants
+=============
+orders_tbl
+----------
+pay_mode -
+	1. Cash On Delivery : cash
+	2. Online Payment : online
+trans_id - 
+	1. If online payment : [ TRANSACTION_ID ]
+	2. If cash payment : none
+pay_status
+	1. If online payment done : done
+	2. If cash payement done : done
+	3. If cash payement pending : pending (DEFAULT OF COD)
+	4. If online payment pending : pending
+order_status -
+	1. If confirmed : confirmed
+	2. If not confirmed : not_confirmed (DEFAULT)
+	3. If rejected : rejected
+	4. If dispatched : dispatched
+	5. If delivered : delivered
+	6. If cancelled : canceled
+delivery_boy -
+	1. If not assigned : none (DEFAULT)
+	2. If assigned : [ boy's name ]
